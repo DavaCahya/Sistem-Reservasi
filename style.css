@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #cfd8dc;
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: #023e8a;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
+  }
+  
+  /* Table for Room List */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  table, th, td {
+    border: 1px solid #d3d3d3;
+  }
+  
+  th, td {
+    padding: 14px;
+    text-align: center;
+  }
+  
+  th {
+    background: linear-gradient(135deg, #ff0000, #0096c7);
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #f1f9ff;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #e0f7fa;
+  }
+  
+  /* Reservation Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1em;
+    background: #e9f7ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  form:hover {
+    transform: scale(1.02);
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input, button {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #cfd8dc;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 4px rgba(0, 119, 182, 0.3);
+  }
+  
+  button {
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005f99;
+  }
+  
+  #error-message {
+    color: #e63946;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+  }
+  
+  #error-message.hidden {
+    opacity: 0;
+  }
+  
+  /* Reservation List Styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #reservations li {
+    padding: 15px;
+    margin-bottom: 8px;
+    background-color: #edf6f9;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #reservations li:hover {
+    background-color: #d8f3dc;
+  }
+  
+  #reservations li button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reservations li button:hover {
+    background-color: #d62839;
+  }
+  
